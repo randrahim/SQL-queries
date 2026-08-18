@@ -1,4 +1,4 @@
-/* 1) all Records where customers last name is not Young: */
+-- 1) all Records where customers last name is not Young:
 
 SELECT * FROM classicmodels.customers
 WHERE contactlastname <> 'Young'
