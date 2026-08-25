@@ -1,7 +1,7 @@
 SELECT COUNT(orderNumber) as Orders
 FROM orders;
 
-SELECT productCode, COUNT(orderNumber) as Orders
+SELECT productCode, COUNT(DISTINCT orderNumber) as Orders
 FROM orderdetails
 GROUP BY productCode;
 
