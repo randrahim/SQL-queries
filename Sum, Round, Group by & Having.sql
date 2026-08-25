@@ -13,3 +13,9 @@ FROM payments
 GROUP BY paymentDate
 HAVING total_payments > 5000
 ORDER BY total_payments desc;
+
+SELECT paymentDate, ROUND(SUM(amount),1) as total_payments
+FROM payments
+GROUP BY paymentDate
+HAVING paymentDate > '2003-06-01'
+ORDER BY 1;
